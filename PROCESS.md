@@ -1,5 +1,6 @@
 # GETTING START
-
+I create this app first by following the instructions here https://docs.convex.dev/quickstart/react and than following the instructions here https://docs.convex.dev/auth/clerk
+ 
 ## set up accounts
  - create a convex.dev account
  - create a clerk account and follow 1st three steps of 
