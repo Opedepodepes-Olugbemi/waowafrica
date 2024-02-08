@@ -1,4 +1,6 @@
-# START
+# GETTING START
+
+## set up accounts
  - create a convex.dev account
  - create a clerk account and follow 1st three steps of 
   - https://docs.convex.dev/auth/clerk 
@@ -12,7 +14,7 @@
  - go to QUICKSTART below
 
 
-## QUICKSTART
+## download and run the code
   - cd waowafrica/waowafrica
   - npm install
   - npx convex dev
