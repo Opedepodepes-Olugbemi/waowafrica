@@ -1,16 +1,18 @@
-import "./App.css";
-import { useQuery } from "convex/react";
-import { api } from "../convex/_generated/api";
+import { SignInButton, SignOutButton } from "@clerk/clerk-react";
+import { Authenticated, Unauthenticated, AuthLoading } from "convex/react";
 
 function App() {
-  const tasks = useQuery(api.tasks.get);
   return (
     <div className="App">
-      {tasks?.map(({ _id, text }) => (
-        <div key={_id}>{text}</div>
-      ))}
+      <Authenticated>
+        <SignOutButton />
+      </Authenticated>
+      <Unauthenticated>
+        <SignInButton />
+      </Unauthenticated>
     </div>
   );
 }
 
-export default App;
+export default App
+     
