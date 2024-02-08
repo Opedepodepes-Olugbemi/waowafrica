@@ -23,3 +23,7 @@
     ![image](img/api_key.png)
   - npm run dev
         
+## login into the app
+  - the app by default should have test "Enable test mode" turned on
+  - this url describes how you can create as test users with this setting on https://clerk.com/docs/testing/test-emails-and-phones
+  
