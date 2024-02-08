@@ -17,5 +17,7 @@
   - npm install
   - npx convex dev
     - this will create .env.local file that will not be checked into git, which includes the identifiers to connect to your app on convex.dev
+    - add VITE_CLERK_PUBLISHABLE_KEY to .env.local file
+    ![image](img/api_key.png)
   - npm run dev
         
