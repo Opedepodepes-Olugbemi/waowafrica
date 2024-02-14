@@ -14,7 +14,8 @@ import type {
   FilterApi,
   FunctionReference,
 } from "convex/server";
-import type * as tasks from "../tasks.js";
+import type * as locations from "../locations.js";
+import type * as waowFunctions from "../waowFunctions.js";
 
 /**
  * A utility for referencing Convex functions in your app's API.
@@ -25,7 +26,8 @@ import type * as tasks from "../tasks.js";
  * ```
  */
 declare const fullApi: ApiFromModules<{
-  tasks: typeof tasks;
+  locations: typeof locations;
+  waowFunctions: typeof waowFunctions;
 }>;
 export declare const api: FilterApi<
   typeof fullApi,

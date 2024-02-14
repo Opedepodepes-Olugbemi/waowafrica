@@ -1,11 +1,15 @@
 import { SignInButton, SignOutButton } from "@clerk/clerk-react";
-import { Authenticated, Unauthenticated, AuthLoading } from "convex/react";
+import { Authenticated, Unauthenticated,} from "convex/react";
+import AddLocationForm from "./AddLocationForm";
+import ShowLocations from "./ShowLocations";
 
-function App() {
+export default function App() {
   return (
     <div className="App">
       <Authenticated>
         <SignOutButton />
+        <AddLocationForm/>
+        <ShowLocations/>
       </Authenticated>
       <Unauthenticated>
         <SignInButton />
@@ -14,5 +18,4 @@ function App() {
   );
 }
 
-export default App
-     
+

@@ -6,4 +6,8 @@ export default defineSchema({
     text: v.string(),
     isCompleted: v.boolean(),
   }),
+  location: defineTable({
+    name: v.string(),
+    editedby: v.optional(v.string()),
+  })
 });
