@@ -28,3 +28,11 @@ I create this app first by following the instructions here https://docs.convex.d
   - the app by default should have test "Enable test mode" turned on
   - this url describes how you can create as test users with this setting on https://clerk.com/docs/testing/test-emails-and-phones
   
+
+
+# CHANGES SINCE LAST UPDATE
+- https://stack.convex.dev/npm-run-dev-with-package-scripts
+  
+      "dev": "npm-run-all --parallel dev:backend dev:frontend",
+    "dev:backend": "convex dev",
+    "dev:frontend": "vite",
